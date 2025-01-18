@@ -1,0 +1,161 @@
+body{
+    background-color: black;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+#filmListLayout{
+    margin: 0 auto;
+    width: 500px;
+}
+
+input[type="text"]{
+    width: 495px;
+    margin: 0 auto;
+    padding: 10px 0px 10px 5px;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+}
+
+input::placeholder{
+    font-style: italic;
+}
+
+button{
+    background-color: rgb(168, 91, 240);
+    color:rgb(255, 255, 255);
+    
+    border:none;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+button:hover{
+    background-color: rgba(152, 60, 239, 0.846);
+    
+}
+
+#addFilmButton{
+    width: 500px;
+    margin:0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+#addFilmButton.disabled{
+    background-color: gray;
+}
+
+#addFilmLayout{
+    display:none;
+    margin: 0 auto 20px auto;
+    width: 500px;
+}
+
+.input-field{
+flex-direction: column;
+width: 95%;
+}
+
+.input-field input{
+    width: calc(100% - 5px);
+}
+
+#confirmAddFilmButton{
+    width:15%;
+    font-size: 1.2rem;
+    border: none;
+    box-shadow: none;
+    margin: 0;
+}
+
+.hidden{
+    display: none !important;
+}
+
+#searchLayout{
+display: flex;
+
+}
+
+#searchIcon{
+    background-color: rgb(255, 255, 255);
+    color: rgba(177, 177, 177, 0.723);
+    font-size: 1.2rem;
+    width: 85px;
+    line-height: 38px;
+    cursor: pointer;
+}
+
+#clearSearchButton{
+font-size: 1.2rem;
+width: 85px;
+padding:0;
+height: 41px;
+
+}
+
+#filmList{
+    margin-top: 20px;
+}
+
+ul{
+    list-style: none;
+    padding:0;
+}
+
+li {
+    width: 490px;
+    margin:10px 0;
+    padding: 0 5px;
+    font-size: 18px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.film-title{
+    width: 50%;
+    text-align: left;
+}
+
+.film-genre{
+    width: 20%;
+    text-align: left;
+}
+
+.film-icon:hover{
+    cursor: pointer;
+}
+
+#deleteFilmButton{
+    font-size: 1rem;
+    background-color: lightcoral;
+    border:none;
+    border-radius: 5px;
+    height:20px;
+    width:40px;
+    line-height: 20px;
+    padding: 2px 0 0 0;
+    margin-right: 12px;
+
+}
